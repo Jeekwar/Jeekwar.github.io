@@ -1,8 +1,15 @@
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   background-color: #585858;
 }
 
-.textjumbtron {
-  color: #ffffff;
+#project {
+  background-color: #585858;
+}
+
+#contact .container {
+  margin-bottom: 100px;
+}
+footer {
+  background-color: #2c2c2c;
 }
