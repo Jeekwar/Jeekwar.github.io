@@ -1,3 +1,6 @@
+/* #isi {
+  z-index: initial;
+} */
 .jumbotron img {
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
 }
@@ -5,15 +8,20 @@
   background-image: url('img/jumbotron-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 6rem;
+  padding-top: 10rem;
+  min-height: 700px;
   background-color: #585858;
   overflow: hidden;
 }
 
 #bigTittle {
-  background-image: url('img/bigtittle-bg.jpg');
+  background-image: url('img/bigtittle/2.jpg');
   background-size: cover;
   background-attachment: fixed;
+}
+
+#bigTittle h1 {
+  font-size: 50px;
 }
 #bigTittle h1,
 .jumbotron h1,
@@ -21,14 +29,41 @@
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+#about {
+  min-height: 600px;
+}
+
+.tittleeducation {
+  background-image: url('img/bigtittle/3.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.education {
+  min-height: 700px;
+  background-color: #f3f3f3;
+}
+.education .card.row1,
+.education .card.row2 {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: 1.3s;
+  transform: translate(0, 50px);
+  opacity: 0;
+}
+.education .card.row1.muncul,
+.education .card.row2.muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 #project {
   background-color: #585858;
 }
 
 .project .card {
-  transition: 0.5s;
-  transform: translate(0, 30px);
+  transition: 1s;
+  transform: translate(0, 40px);
   opacity: 0;
+  margin-bottom: 10rem;
 }
 .project .card.muncul {
   opacity: 1;
