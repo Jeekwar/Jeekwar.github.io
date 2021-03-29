@@ -58,13 +58,26 @@
   opacity: 1;
   transform: translate(0, 0);
 }
-#about {
-  min-height: 600px;
+#skills {
+  background-color: #212121;
+  min-height: 700px;
 }
-
+#about {
+  background-color: #212121;
+  min-height: 700px;
+}
+#about img {
+  height: auto;
+  width: 600px;
+  max-width: 100%;
+  margin-top: -50px;
+}
+.aboutme {
+  font-size: 40px;
+}
 .aboutme,
 .isiaboutme {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   opacity: 0;
   transform: translate(0, 50px);
   transition: 1.3s;
@@ -75,11 +88,29 @@
   opacity: 1;
   transform: translate(0, 0);
 }
+/* project */
+#project {
+  background-color: #212121;
+}
+
+.project .card {
+  transition: 1s;
+  transform: translate(0, 40px);
+  opacity: 0;
+  margin-bottom: 10rem;
+}
+.project .card.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 .tittleeducation {
   background-image: url('img/bigtittle/3.jpg');
   background-attachment: fixed;
   background-size: cover;
+}
+#education {
+  background-color: #212121;
 }
 .education h1 {
   font-size: 50px;
@@ -90,7 +121,6 @@
 }
 .education {
   min-height: 700px;
-  background-color: #f3f3f3;
 }
 .education .card.row1,
 .education .card.row2 {
@@ -105,29 +135,14 @@
   opacity: 1;
 }
 
-#project {
-  background-color: #f3f3f3;
+#contact {
+  background-color: #242424;
 }
-
-.project .card {
-  transition: 1s;
-  transform: translate(0, 40px);
-  opacity: 0;
-  margin-bottom: 10rem;
-}
-.project .card.muncul {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 #contact .container {
-  margin-bottom: 100px;
-}
-footer {
-  background-color: #2c2c2c;
+  padding-bottom: 100px;
 }
 
-.seksion {
+section {
   padding-top: 5rem;
 }
 
@@ -138,4 +153,20 @@ footer {
 .card img:hover {
   filter: grayscale(50%);
   transform: scale(1.02);
+}
+
+.tittle {
+  font-size: 50px;
+}
+#social-media {
+  background-color: #242424;
+}
+.simbol {
+  font-size: 40px;
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+footer {
+  background-color: #2c2c2c;
 }
