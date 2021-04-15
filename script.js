@@ -2,15 +2,15 @@
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop();
 
-  $('.jumbotron img').css({
-    transform: `translate(0px, ${wScroll / 3}%)`,
-  });
-  $('.jumbotron h1').css({
-    transform: `translate(0px, ${wScroll / 1.5}%)`,
-  });
-  $('.jumbotron p').css({
-    transform: `translate(0px, ${wScroll / 2.5}%)`,
-  });
+  // $('.jumbotron img').css({
+  //   transform: `translate(0px, ${wScroll / 3}%)`,
+  // });
+  // $('.jumbotron h1').css({
+  //   transform: `translate(0px, ${wScroll / 1.5}%)`,
+  // });
+  // $('.jumbotron p').css({
+  //   transform: `translate(0px, ${wScroll / 2.5}%)`,
+  // });
 
   // effect landing element pada about
   if (wScroll > $('#about').offset().top - 480) {
@@ -55,6 +55,6 @@ $(window).scroll(function () {
 
 // effect for link navbar active
 // effect landing poge saat halaman dibuka/refresh
-$(window).on('load', function () {
-  $('.isijumbotron').addClass('muncul');
-});
+// $(window).on('load', function () {
+//   $('.isijumbotron').addClass('muncul');
+// });
