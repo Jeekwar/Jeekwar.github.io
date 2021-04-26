@@ -2,48 +2,70 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+body h1,
+body p {
+  color: #fff;
+}
 .brand .navbar-brand:hover {
   transition: 0.1s;
   transform: scale(1.02);
 }
+nav ul li a {
+  text-shadow: 10px 10px 10px 10px aqua;
 
+  border-radius: 20px;
+  color: #313b44 !important;
+}
+nav ul li a:hover {
+  background-color: #2e2e2e;
+  color: #fff !important;
+}
 .jumbotron {
-  background: linear-gradient(to right bottom, #dfd222, #dfd000);
+  background: rgb(71, 171, 231);
+  background: linear-gradient(0deg, rgb(73, 161, 219) 17%, rgba(109, 182, 255, 1) 49%, rgba(120, 205, 255, 1) 100%);
   padding-top: 4rem;
   min-height: 103vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.glass {
+/* .glass {
   width: 90%;
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 15px 0 rgba(90, 90, 90, 0.37);
+  box-shadow: 0 0 2px 0 rgba(117, 117, 117, 0.37);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   min-height: 60vh;
   z-index: 3;
+} */
+header h1,
+header p {
+  color: #094b65;
 }
-.glass h1 {
-  padding-top: 85px;
+.Tittle-head {
+  position: absolute;
+  top: 35%;
   text-shadow: slategray;
+  z-index: 3;
 }
+
 .circle1,
 .circle2 {
-  background: linear-gradient(to right bottom, rgb(223, 223, 223), rgb(51, 51, 51));
+  background: #f5d93b;
   z-index: 2;
   position: absolute;
   border-radius: 50%;
   border: solid;
-  border-color: #aaaaaa;
+  border-color: #e6e951;
   border-width: 1px;
+  box-shadow: 0 2px 30px 5px rgba(251, 255, 0, 0.644);
 }
 .circle1 {
-  height: 20rem;
-  width: 20rem;
-  top: 10%;
+  height: 6rem;
+  width: 6rem;
+  top: 15%;
   right: 15%;
 }
 .circle2 {
@@ -51,6 +73,40 @@ body {
   width: 10rem;
   top: 60%;
   left: 20%;
+}
+.awan {
+  position: absolute;
+  top: 10%;
+}
+.awan2 {
+  width: 40%;
+  left: -80px;
+  top: 290px;
+  z-index: 3;
+}
+.awan3 {
+  left: 60%;
+  top: 20%;
+  width: 30%;
+  z-index: 2;
+  padding: 0;
+}
+
+.water {
+  position: absolute;
+  bottom: -100px;
+  width: 1500px;
+  right: 0;
+  z-index: 4;
+}
+.shadow-jumbotron {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  z-index: 6;
+  background: linear-gradient(to top, #094b65, transparent);
 }
 
 .skills h1 {
@@ -79,12 +135,13 @@ body {
   transform: translate(0, 0);
 }
 #skills {
-  background-color: #212121;
+  background-color: #094b65;
   min-height: 700px;
 }
 #about {
-  background: linear-gradient(to top right, #dfd222, #dfd000);
-  min-height: 700px;
+  background: rgb(0, 69, 111);
+  background: #094b65;
+  min-height: 105vh;
 }
 #about img {
   height: auto;
@@ -110,7 +167,7 @@ body {
 }
 /* project */
 #project {
-  background: linear-gradient(to bottom right, #e0e77d, #c4c721);
+  background: #094b65;
 }
 
 .project .card {
@@ -130,7 +187,7 @@ body {
   background-size: cover;
 }
 #education {
-  background-color: #212121;
+  background-color: #094b65;
 }
 .education h1 {
   font-size: 50px;
@@ -156,7 +213,7 @@ body {
 }
 
 #contact {
-  background-color: #242424;
+  background-color: #094b65;
 }
 #contact .container {
   padding-bottom: 100px;
@@ -179,7 +236,7 @@ section {
   font-size: 50px;
 }
 #social-media {
-  background-color: #242424;
+  background-color: #094b65;
 }
 .simbol {
   font-size: 40px;
